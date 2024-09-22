@@ -1,0 +1,35 @@
+.menuPrincipal {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menuLogo img {
+  width: 75px;
+}
+
+.menuItensList{
+  display: flex;
+  list-style: none;
+}
+
+.menuItensList li {
+  margin-right: 50px;
+}
+
+.menuItensList li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+}
+
+.menuItensList li a:hover {
+  background-color: #333;
+  color: azure;
+  border-radius: 10px;
+}
