@@ -20,7 +20,7 @@ const LayoutGaleria = () => {
       <div className={styles.gallery}>
         {Array.from({length: images}).map((_, index) => (
           <div key={index} className={styles.imagePlaceholder}>
-            <p>100 x 100</p>
+            <p>Imagem Ficticia</p>
           </div>
         ))}
       </div>
