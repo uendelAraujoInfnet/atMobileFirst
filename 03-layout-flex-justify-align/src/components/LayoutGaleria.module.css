@@ -49,3 +49,18 @@
   justify-content: center;
   font-size: 14px;
 }
+
+/* Responsividade - Mobile First */
+@media (min-width: 600px) {
+  .imagePlaceholder {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imagePlaceholder {
+    width: 200px;
+    height: 200px;
+  }
+}
