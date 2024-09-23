@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background-color: rgb(59, 36, 28);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  padding: 10px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.controls span {
+  margin: 0 10px;
+  font-size: 1.8rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.imagePlaceholder {
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(59, 36, 28);
+  border: 1px solid #ccc;
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
