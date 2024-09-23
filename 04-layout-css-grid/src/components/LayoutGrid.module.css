@@ -1,0 +1,73 @@
+.container {
+  display: grid;
+  grid-template-areas: "header" "globalMenu" "contextMenu" "mainContent" "ads" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* DEFINIÇÃO DAS ÁREAS */
+.header {
+  grid-area: header;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.globalMenu {
+  grid-area: globalMenu;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.contextMenu {
+  grid-area: contextMenu;
+  background-color: #e3e3e3;
+  padding: 20px;
+}
+
+.mainContent {
+  grid-area: mainContent;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.ads {
+  grid-area: ads;
+  background-color: #d4d4d4;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Layout responsivo - Mobile First */
+@media (min-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header header header"
+      "globalMenu globalMenu ads"
+      "contextMenu mainContent ads"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-areas:
+      "header header header"
+      "globalMenu globalMenu ads "
+      "contextMenu mainContent ads"
+      "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+}
