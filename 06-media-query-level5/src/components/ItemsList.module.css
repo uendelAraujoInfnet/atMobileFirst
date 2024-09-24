@@ -1,0 +1,56 @@
+/* ShoppingList.module.css */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: #f0f0f0;
+}
+
+.total {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Formulário para adicionar itens */
+.addItemForm {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputField {
+  width: 150px;
+}
+
+/* Tema responsivo */
+@media (min-width: 600px) {
+  .item {
+    padding: 15px;
+  }
+}
