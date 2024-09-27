@@ -1,0 +1,33 @@
+.light {
+  background-color: #ffffff;
+  color: #000000;
+  .iconChangeColor {
+    color: #857474;
+  }
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+  .iconChangeColor {
+    color: #db7210;
+  }
+}
+
+button {
+  margin: 10px;
+  width: 100%;
+}
+
+/* Estilos para orientação landscape */
+@media (orientation: landscape) {
+  .quizContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  button {
+    width: 40%;
+  }
+}
