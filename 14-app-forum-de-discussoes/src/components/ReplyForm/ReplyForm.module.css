@@ -1,0 +1,46 @@
+.replyForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  max-width: 62vw;
+}
+
+.replyForm textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.replyForm button {
+  margin-right: -19px;
+  align-self: flex-end;
+  padding: 0.9rem 1.9rem;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.replyForm button:hover {
+  background-color: #71eb7b;
+  color: #201e1e;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.user {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .replyForm {
+    max-width: 92vw;
+  }
+}

@@ -1,0 +1,31 @@
+.app {
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "content"
+    "sidebar";
+  grid-template-columns: 1fr;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (min-width: 800px) {
+  .app {
+    grid-template-areas:
+      "menu menu"
+      "content sidebar";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.menu {
+  grid-area: menu;
+}

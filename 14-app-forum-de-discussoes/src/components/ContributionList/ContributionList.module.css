@@ -1,0 +1,45 @@
+.contributions {
+  padding: 1rem;
+  margin-top: 50px;
+  max-height: 240px;
+  overflow-y: auto;
+  border: 2px solid #ddd;
+}
+
+.contribution {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.contributionDetails {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.contributionDetails span {
+  margin-right: 1rem;
+}
+
+.contribution p {
+  margin: 0;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: #ff1744; 
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.deleteButton:hover {
+  background-color: #f50057;
+  color: #ddd;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 4px;
+}
